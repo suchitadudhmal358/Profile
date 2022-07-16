@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  
 }
 
 .header {
@@ -11,6 +12,9 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: "Roboto", sans-serif;
+
+  position: sticky;
+  top: 0;
 }
 
 div .menu {
@@ -41,7 +45,7 @@ div .menu {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 30em;
+  /* height: 100vh; */
   align-items: center;
 }
 
@@ -66,6 +70,8 @@ div .menu {
   color: white;
   justify-content: space-evenly;
   align-items: center;
+ 
+  
 }
 
 .address {
@@ -138,6 +144,40 @@ div .menu {
   background-color: blue;
 }
 
+.main-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  
+
+}
+.container2{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  border-radius: 15px 50px; 
+  border: 2px solid teal;
+  padding: 10px;
+}
+
+.main-container hr{
+  width: 70%;
+  height: 5px;
+  background-color: darkgreen;
+
+}
+
+footer{
+  position: sticky;
+  bottom: 0;
+}
+
 /*  ------------------------ Media Query --------------------------- */
 
 @media screen and (max-width: 600px) {
@@ -146,6 +186,7 @@ div .menu {
   }
   .menubar {
     display: block;
+    
   }
 
   .container {
@@ -153,7 +194,7 @@ div .menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    
   }
 
   .profile img {
@@ -165,6 +206,7 @@ div .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
   }
 
   .socialMediaLinks .fa {
@@ -187,5 +229,35 @@ div .menu {
 
   .info p {
     font-size: 8pt;
+  }
+
+  .main-container{
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+  }
+
+  .box{
+    height: 150px;
+    width: 200px;
+    font-size: 10px;
+    
+  }
+
+}
+
+@media  screen and (min-width:600px) and (max-width:768px) {
+  
+  .box{
+    height: 200px;
+    width: 200px;
+    font-size: 12px;
   }
 }
